@@ -6,10 +6,10 @@ import com.intellij.psi.xml.XmlFile
 import com.intellij.testFramework.TestDataPath
 import com.intellij.testFramework.fixtures.BasePlatformTestCase
 import com.intellij.util.PsiErrorElementUtil
-import com.github.opatrascoiu.intellijpluginsample.services.MyProjectService
+import org.finos.intellij.legend.ide.services.LegendProjectService
 
 @TestDataPath("\$CONTENT_ROOT/src/test/testData")
-class MyPluginTest : BasePlatformTestCase() {
+class LegendPluginTest : BasePlatformTestCase() {
 
     fun testXMLFile() {
         val psiFile = myFixture.configureByText(XmlFileType.INSTANCE, "<foo>bar</foo>")
@@ -30,7 +30,7 @@ class MyPluginTest : BasePlatformTestCase() {
     }
 
     fun testProjectService() {
-        val projectService = project.service<MyProjectService>()
+        val projectService = project.service<LegendProjectService>()
 
         assertNotSame(projectService.getRandomNumber(), projectService.getRandomNumber())
     }

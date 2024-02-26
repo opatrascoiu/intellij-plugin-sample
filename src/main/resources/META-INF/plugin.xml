@@ -1,18 +1,29 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.opatrascoiu.intellijpluginsample</id>
-    <name>intellij-plugin-sample Template</name>
+    <name>Legend LSP</name>
     <vendor>opatrascoiu</vendor>
 
-    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.ultimate</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.opatrascoiu.intellijpluginsample.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <!-- Language -->
+        <fileType name="Pure"
+                  language="Pure"
+                  implementationClass="org.finos.intellij.legend.lang.PureFileType"
+                  extensions="pure"
+                  fieldName="INSTANCE"/>
+
+        <toolWindow factoryClass="org.finos.intellij.legend.ide.tool.LegendToolWindowFactory" id="MyToolWindow"/>
+
+        <!-- LSP -->
+        <platform.lsp.serverSupportProvider implementation="org.finos.intellij.legend.ide.lsp.LegendLspServerSupportProvider"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.opatrascoiu.intellijpluginsample.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="org.finos.intellij.legend.ide.listeners.LegendApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+
 </idea-plugin>
