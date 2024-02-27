@@ -15,16 +15,21 @@ internal class LegendLspServerSupportProvider : LspServerSupportProvider {
     }
 }
 
+private const val EXEC = "java"
+
+private const val ARGS = "-jar ./server/legend-engine-ide-lsp-server-shaded-0.0.9-SNAPSHOT.jar ./server/pom.xml"
+
 private class LegendLspServerDescriptor(project: Project) : ProjectWideLspServerDescriptor(project, "Pure") {
+
     override fun isSupportedFile(file: VirtualFile) = file.extension == "pure"
-//    override fun createCommandLine() = GeneralCommandLine("java", "--stdio")
+//    override fun createCommandLine() = GeneralCommandLine(EXEC, ARGS)
 
     override fun createCommandLine(): GeneralCommandLine {
         return GeneralCommandLine().apply {
             withParentEnvironmentType(GeneralCommandLine.ParentEnvironmentType.CONSOLE)
-            withExePath("java")
             withCharset(Charsets.UTF_8)
-            addParameter("-jar server ./server/legend-engine-ide-lsp-server-shaded-0.0.9-SNAPSHOT.jar ./server/pom.xml")
+            withExePath(EXEC)
+            addParameters(ARGS)
         }
     }
 
