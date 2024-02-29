@@ -1,0 +1,6 @@
+How to debug
+
+https://medium.com/agorapulse-stories/how-to-debug-your-own-intellij-idea-instance-7d7df185a48d
+
+Supported features
+https://plugins.jetbrains.com/docs/intellij/language-server-protocol.html#supported-features

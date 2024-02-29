@@ -65,6 +65,10 @@ koverReport {
 }
 
 tasks {
+    buildSearchableOptions {
+        enabled = false
+    }
+
     wrapper {
         gradleVersion = properties("gradleVersion").get()
     }
@@ -97,6 +101,20 @@ tasks {
                         .withEmptySections(false),
                     Changelog.OutputType.HTML,
                 )
+            }
+        }
+    }
+
+    // Add LSP jar to idea-sandbox
+    prepareSandbox {
+        doFirst {
+            delete(fileTree(defaultDestinationDir))
+        }
+
+        doLast {
+            copy {
+                from(project.layout.projectDirectory.dir("server"))
+                into(project.layout.projectDirectory.dir("build/idea-sandbox/plugins/intellij-plugin-sample/server/"))
             }
         }
     }
