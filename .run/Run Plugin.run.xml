@@ -15,6 +15,7 @@
         </list>
       </option>
       <option name="vmOptions" value="" />
+<!--      <option name="vmOptions" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005" />-->
     </ExternalSystemSettings>
     <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
     <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
