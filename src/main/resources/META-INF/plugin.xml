@@ -16,7 +16,7 @@
                   extensions="pure"
                   fieldName="INSTANCE"/>
 
-        <toolWindow factoryClass="org.finos.intellij.legend.ide.tool.LegendToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="org.finos.intellij.legend.ide.tool.LegendToolWindowFactory" id="LegendToolWindow"/>
 
         <!-- LSP -->
         <platform.lsp.serverSupportProvider implementation="org.finos.intellij.legend.ide.lsp.LegendLspServerSupportProvider"/>
