@@ -16,6 +16,7 @@
                   extensions="pure"
                   fieldName="INSTANCE"/>
 
+        <!-- https://www.jetbrains.com/help/idea/tool-windows.html -->
         <toolWindow factoryClass="org.finos.intellij.legend.ide.tool.LegendToolWindowFactory" id="LegendToolWindow"/>
 
         <!-- LSP -->
@@ -23,6 +24,7 @@
     </extensions>
 
     <applicationListeners>
+        <!-- https://plugins.jetbrains.com/docs/intellij/plugin-listeners.html -->
         <listener class="org.finos.intellij.legend.ide.listeners.LegendApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
 
