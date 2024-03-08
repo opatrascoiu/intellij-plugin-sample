@@ -9,7 +9,7 @@ import org.finos.intellij.legend.ide.LegendBundle
 class LegendProjectService(project: Project) {
 
     init {
-        thisLogger().info(LegendBundle.message("projectService", project.name))
+        thisLogger().info(LegendBundle.message("legend.projectService", project.name))
         thisLogger().warn("Don't forget to remove all non-needed sample code files with their corresponding registration entries in `plugin.xml`.")
     }
 

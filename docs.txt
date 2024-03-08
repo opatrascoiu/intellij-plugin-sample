@@ -1,6 +1,8 @@
 How to debug
 
 https://medium.com/agorapulse-stories/how-to-debug-your-own-intellij-idea-instance-7d7df185a48d
+-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
+./gradlew runIde -Dorg.gradle.debug=true --no-daemon
 
 Supported features
 https://plugins.jetbrains.com/docs/intellij/language-server-protocol.html#supported-features

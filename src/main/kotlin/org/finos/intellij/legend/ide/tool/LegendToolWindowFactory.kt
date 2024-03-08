@@ -32,12 +32,12 @@ class LegendToolWindowFactory : ToolWindowFactory {
         private val service = toolWindow.project.service<LegendProjectService>()
 
         fun getContent() = JBPanel<JBPanel<*>>().apply {
-            val label = JBLabel(LegendBundle.message("randomLabel", "?"))
+            val label = JBLabel(LegendBundle.message("legend.randomLabel", "?"))
 
             add(label)
-            add(JButton(LegendBundle.message("shuffle")).apply {
+            add(JButton(LegendBundle.message("legend.shuffle")).apply {
                 addActionListener {
-                    label.text = LegendBundle.message("randomLabel", service.getRandomNumber())
+                    label.text = LegendBundle.message("legend.randomLabel", service.getRandomNumber())
                 }
             })
         }

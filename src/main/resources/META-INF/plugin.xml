@@ -6,7 +6,7 @@
 
     <depends>com.intellij.modules.ultimate</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <resource-bundle>messages.LegendBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Language -->
@@ -15,6 +15,12 @@
                   implementationClass="org.finos.intellij.legend.lang.PureFileType"
                   extensions="pure"
                   fieldName="INSTANCE"/>
+
+        <!-- https://plugins.jetbrains.com/docs/intellij/settings-guide.html -->
+        <projectConfigurable groupId="build.tools" id="org.finos.intellij.legend.ide.settings.LegendSettingsConfigurable"
+                             instance="org.finos.intellij.legend.ide.settings.LegendSettingsConfigurable"
+                             key="legend.name" bundle="messages.LegendBundle">
+        </projectConfigurable>
 
         <!-- https://www.jetbrains.com/help/idea/tool-windows.html -->
         <toolWindow factoryClass="org.finos.intellij.legend.ide.tool.LegendToolWindowFactory" id="LegendToolWindow"/>
