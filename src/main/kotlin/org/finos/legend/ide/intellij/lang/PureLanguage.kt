@@ -1,4 +1,4 @@
-package org.finos.intellij.legend.lang
+package org.finos.legend.ide.intellij.lang
 
 import com.intellij.lang.Language
 

@@ -1,8 +1,8 @@
-package org.finos.intellij.legend.ide.settings;
+package org.finos.legend.ide.intellij.settings;
 
 import com.intellij.openapi.options.Configurable;
 import com.intellij.openapi.project.Project;
-import org.finos.intellij.legend.ide.LegendBundle;
+import org.finos.legend.ide.intellij.LegendBundle;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;

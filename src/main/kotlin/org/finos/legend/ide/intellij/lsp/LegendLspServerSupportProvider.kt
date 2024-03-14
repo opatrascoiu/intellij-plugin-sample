@@ -1,4 +1,4 @@
-package org.finos.intellij.legend.ide.lsp
+package org.finos.legend.ide.intellij.lsp
 
 import com.intellij.execution.ExecutionException
 import com.intellij.execution.configurations.GeneralCommandLine
@@ -7,7 +7,7 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.platform.lsp.api.LspServerSupportProvider
 import com.intellij.platform.lsp.api.ProjectWideLspServerDescriptor
-import org.finos.intellij.legend.ide.completion.LegendLspCompletionSupport
+import org.finos.legend.ide.intellij.completion.LegendLspCompletionSupport
 import java.io.File
 
 internal class LegendLspServerSupportProvider : LspServerSupportProvider {

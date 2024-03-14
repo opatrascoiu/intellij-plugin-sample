@@ -1,4 +1,4 @@
-package org.finos.intellij.legend.ide.completion
+package org.finos.legend.ide.intellij.completion
 
 import com.intellij.codeInsight.lookup.LookupElementBuilder
 import com.intellij.icons.AllIcons

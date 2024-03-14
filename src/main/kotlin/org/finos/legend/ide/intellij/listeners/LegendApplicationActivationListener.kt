@@ -1,4 +1,4 @@
-package org.finos.intellij.legend.ide.listeners
+package org.finos.legend.ide.intellij.listeners
 
 import com.intellij.openapi.application.ApplicationActivationListener
 import com.intellij.openapi.diagnostic.thisLogger

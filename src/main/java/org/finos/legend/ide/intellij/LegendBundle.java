@@ -1,4 +1,4 @@
-package org.finos.intellij.legend.ide;
+package org.finos.legend.ide.intellij;
 
 import com.intellij.DynamicBundle;
 import org.jetbrains.annotations.NotNull;

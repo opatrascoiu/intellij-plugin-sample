@@ -12,26 +12,26 @@
         <!-- Language -->
         <fileType name="Pure"
                   language="Pure"
-                  implementationClass="org.finos.intellij.legend.lang.PureFileType"
+                  implementationClass="org.finos.legend.ide.intellij.lang.PureFileType"
                   extensions="pure"
                   fieldName="INSTANCE"/>
 
         <!-- https://plugins.jetbrains.com/docs/intellij/settings-guide.html -->
-        <projectConfigurable groupId="build.tools" id="org.finos.intellij.legend.ide.settings.LegendSettingsConfigurable"
-                             instance="org.finos.intellij.legend.ide.settings.LegendSettingsConfigurable"
+        <projectConfigurable groupId="build.tools" id="org.finos.legend.ide.intellij.settings.LegendSettingsConfigurable"
+                             instance="org.finos.legend.ide.intellij.settings.LegendSettingsConfigurable"
                              key="legend.name" bundle="messages.LegendBundle">
         </projectConfigurable>
 
         <!-- https://www.jetbrains.com/help/idea/tool-windows.html -->
-        <toolWindow factoryClass="org.finos.intellij.legend.ide.tool.LegendToolWindowFactory" id="LegendToolWindow"/>
+        <toolWindow factoryClass="org.finos.legend.ide.intellij.tool.LegendToolWindowFactory" id="LegendToolWindow"/>
 
         <!-- LSP -->
-        <platform.lsp.serverSupportProvider implementation="org.finos.intellij.legend.ide.lsp.LegendLspServerSupportProvider"/>
+        <platform.lsp.serverSupportProvider implementation="org.finos.legend.ide.intellij.lsp.LegendLspServerSupportProvider"/>
     </extensions>
 
     <applicationListeners>
         <!-- https://plugins.jetbrains.com/docs/intellij/plugin-listeners.html -->
-        <listener class="org.finos.intellij.legend.ide.listeners.LegendApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="org.finos.legend.ide.intellij.listeners.LegendApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
 
 </idea-plugin>

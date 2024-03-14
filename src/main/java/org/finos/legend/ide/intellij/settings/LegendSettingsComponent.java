@@ -1,4 +1,4 @@
-package org.finos.intellij.legend.ide.settings;
+package org.finos.legend.ide.intellij.settings;
 
 import com.intellij.openapi.fileChooser.FileChooserDescriptor;
 import com.intellij.openapi.project.Project;
@@ -7,7 +7,7 @@ import com.intellij.openapi.util.io.FileUtil;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.ui.components.JBLabel;
 import com.intellij.util.ui.FormBuilder;
-import org.finos.intellij.legend.ide.LegendBundle;
+import org.finos.legend.ide.intellij.LegendBundle;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

@@ -1,9 +1,9 @@
-package org.finos.intellij.legend.ide.services
+package org.finos.legend.ide.intellij.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import org.finos.intellij.legend.ide.LegendBundle
+import org.finos.legend.ide.intellij.LegendBundle
 
 @Service(Service.Level.PROJECT)
 class LegendProjectService(project: Project) {

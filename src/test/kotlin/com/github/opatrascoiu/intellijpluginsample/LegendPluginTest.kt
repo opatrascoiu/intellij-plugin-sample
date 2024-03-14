@@ -6,7 +6,7 @@ import com.intellij.psi.xml.XmlFile
 import com.intellij.testFramework.TestDataPath
 import com.intellij.testFramework.fixtures.BasePlatformTestCase
 import com.intellij.util.PsiErrorElementUtil
-import org.finos.intellij.legend.ide.services.LegendProjectService
+import org.finos.legend.ide.intellij.services.LegendProjectService
 
 @TestDataPath("\$CONTENT_ROOT/src/test/testData")
 class LegendPluginTest : BasePlatformTestCase() {

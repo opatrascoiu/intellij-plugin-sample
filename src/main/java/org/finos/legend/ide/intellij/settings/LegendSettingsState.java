@@ -1,4 +1,4 @@
-package org.finos.intellij.legend.ide.settings;
+package org.finos.legend.ide.intellij.settings;
 
 import com.intellij.openapi.components.PersistentStateComponent;
 import com.intellij.openapi.components.Service;

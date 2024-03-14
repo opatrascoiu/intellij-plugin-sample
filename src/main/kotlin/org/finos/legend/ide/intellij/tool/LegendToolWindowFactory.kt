@@ -1,4 +1,4 @@
-package org.finos.intellij.legend.ide.tool
+package org.finos.legend.ide.intellij.tool
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
@@ -8,8 +8,8 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import org.finos.intellij.legend.ide.LegendBundle
-import org.finos.intellij.legend.ide.services.LegendProjectService
+import org.finos.legend.ide.intellij.LegendBundle
+import org.finos.legend.ide.intellij.services.LegendProjectService
 import javax.swing.JButton
 
 
